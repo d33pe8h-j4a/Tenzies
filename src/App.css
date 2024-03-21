@@ -1,0 +1,150 @@
+main {
+    background-color: #f5f5f5;
+    border-radius: 0.625em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    height: 80vh;
+    margin: 1.875em auto;
+    max-width: 20rem;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #2b283a;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    letter-spacing: -0.03em;
+    margin: 0;
+}
+
+.instructions {
+    color: #4a4e74;
+    font-family: Inter;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-align: center;
+    width: 70%;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(5, 1fr);
+    grid-gap: 1.125em;
+}
+
+.die {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 2px 0px #00000026;
+    height: 2.25em;
+    width: 2.25em;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.held {
+    background-color: #59e391;
+}
+
+.die-value {
+    color: #2b283a;
+    font-size: 1.3125rem;
+    font-weight: 700;
+}
+
+.dot {
+    background-color: black;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.roll-dice {
+    background-color: #5035ff;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    font-family: Karla;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 0.625rem 1.875rem;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+/*Dice Faces*/
+.face1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face2,
+.face3,
+.face4,
+.face5,
+.face6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.face2 .dot:nth-child(2) {
+    align-self: flex-end;
+}
+
+.face3 .dot:nth-child(2) {
+    align-self: center;
+}
+
+.face3 .dot:nth-child(3) {
+    align-self: flex-end;
+}
+
+.face4 .column,
+.face5 .column,
+.face6 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.face5 .column:nth-child(2) {
+    justify-content: center;
+}
+
+/***********Start Game button***********/
+.start-game-btn {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: #2b283a;
+}
+
+.start-game-btn:focus {
+    outline: none;
+}
+
+.start-game-btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
